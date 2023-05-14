@@ -167,7 +167,7 @@ function changeProfilePic() {
                         Change
                     </button>
                     <div>
-                        <p id="outlined_error_help" class="mt-2 text-center text-sm text-red-600 dark:text-red-400"><span class="font-medium">{error}</span></p>
+                        <p id="outlined_error_help" className="mt-2 text-center text-sm text-red-600 dark:text-red-400"><span className="font-medium">{error}</span></p>
                     </div>
                     <div>
                       {error1 && (

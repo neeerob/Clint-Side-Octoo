@@ -139,15 +139,15 @@ export default function GetAllSeller({ data }) {
                 </div>
             </a>
 
-            <div class="mt-4 flex items-center justify-between mb-4 space-x-12">
+            <div className="mt-4 flex items-center justify-between mb-4 space-x-12">
             {product.Blocked ? (
-                <span class="flex items-center px-2 text-xs font-semibold text-red-400 bg-white border border-red-400 rounded-md">
+                <span className="flex items-center px-2 text-xs font-semibold text-red-400 bg-white border border-red-400 rounded-md">
                 
                 Blocked
                 </span>
                 
             ) : (
-                <span class="flex items-center px-2 text-xs font-semibold text-green-500 bg-white border border-green-500 rounded-md">
+                <span className="flex items-center px-2 text-xs font-semibold text-green-500 bg-white border border-green-500 rounded-md">
                 Unblocked
                 </span>
             )}
@@ -157,23 +157,23 @@ export default function GetAllSeller({ data }) {
                 <div className="mt-4">
                   <p className="font-bold text-gray-600">Contact info:</p>
                   
-                        <ul class="mt-2 text-sm space-y-1">
-                        <li class="flex items-center">
-                        <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <ul className="mt-2 text-sm space-y-1">
+                        <li className="flex items-center">
+                        <svg className="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                         </svg>
-                        <a href="mailto:${product.Email}" class="text-gray-900 hover:text-blue-700">{product.Email}</a>
+                        <a href="mailto:${product.Email}" className="text-gray-900 hover:text-blue-700">{product.Email}</a>
                         </li>
 
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <li className="flex items-center">
+                            <svg className="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <a href="tel:${product.Phone}" class="text-gray-900 hover:text-blue-700">{product.Phone}</a>
+                            <a href="tel:${product.Phone}" className="text-gray-900 hover:text-blue-700">{product.Phone}</a>
                         </li>
 
-                        <li class="flex items-center">
-                        <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <li className="flex items-center">
+                        <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17H16"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H16"></path>
@@ -181,7 +181,7 @@ export default function GetAllSeller({ data }) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.4 13.6L21 12"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.4 10.4L21 12"></path>
                         </svg>
-                        <a class="text-gray-900">{product.Wallet} bdt</a>
+                        <a className="text-gray-900">{product.Wallet} bdt</a>
                         </li>
 
 
@@ -196,23 +196,23 @@ export default function GetAllSeller({ data }) {
               </div>
 
 
-                <div class="p-6 text-center">
-                <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">What do you want to do with this user?</h3>
+                <div className="p-6 text-center">
+                <svg aria-hidden="true" className="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">What do you want to do with this user?</h3>
 
 
                 {product.Blocked ? (
-                    <button onClick={() => handelUnblock(product)} type="button" class="mt-4 text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                    <button onClick={() => handelUnblock(product)} type="button" className="mt-4 text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
                     Unblock
                   </button>                  
                 
                 ) : (
                     <>
-                    <button onClick={() => handelBlock(product)} type="button" class="mt-4 text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                    <button onClick={() => handelBlock(product)} type="button" className="mt-4 text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
                         Block
                     </button>
 
-                    <button onClick={() => handelDelete(product)} type="button" class="mt-4 text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                    <button onClick={() => handelDelete(product)} type="button" className="mt-4 text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
                         Delete
                     </button>
                     </>
@@ -228,7 +228,7 @@ export default function GetAllSeller({ data }) {
     <>
       <SessionCheck></SessionCheck>
       <div className="flex justify-left mb-4">
-      <div class="relative">
+      <div className="relative">
       <input
             type="text"
             id="searchInput"
@@ -240,8 +240,8 @@ export default function GetAllSeller({ data }) {
                         focus:border-transparent placeholder-gray-500"
             />
 
-        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
-            <svg class="h-4 w-4 fill-current text-gray-500" viewBox="0 0 16 16">
+        <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <svg className="h-4 w-4 fill-current text-gray-500" viewBox="0 0 16 16">
             <path d="M6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0zM4.8 7.6a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0z"/>
             </svg>
         </div>
@@ -269,52 +269,52 @@ export default function GetAllSeller({ data }) {
 
 
 
-      <table class="w-full">
+      <table className="w-full">
                 <thead>
-                <tr class="bg-blue-600 text-left text-xs font-semibold uppercase tracking-widest text-white">
-                    <th class="px-5 py-3">ID</th>
-                    <th class="px-5 py-3">Full Name</th>
-                    <th class="px-5 py-3">Contact</th>
-                    <th class="px-5 py-3">Wallet</th>
-                    <th class="px-5 py-3">Status</th>
+                <tr className="bg-blue-600 text-left text-xs font-semibold uppercase tracking-widest text-white">
+                    <th className="px-5 py-3">ID</th>
+                    <th className="px-5 py-3">Full Name</th>
+                    <th className="px-5 py-3">Contact</th>
+                    <th className="px-5 py-3">Wallet</th>
+                    <th className="px-5 py-3">Status</th>
                 </tr>
                 </thead>
-                <tbody class="text-gray-500">
+                <tbody className="text-gray-500">
                 {filteredData.slice((page - 1) * perPage, page * perPage).map((product) => (
                 <tr key={product.Id} 
-                class="hover:bg-gray-200 hover:shadow-xl transition duration-300 ease-in-out"
+                className="hover:bg-gray-200 hover:shadow-xl transition duration-300 ease-in-out"
                 onClick={() => handleToggleMode(product)}
                 >
 
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                    <p class="whitespace-no-wrap">{product.Id}</p>
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                    <p className="whitespace-no-wrap">{product.Id}</p>
                     </td>
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                    <div class="flex items-center">
-                        <div class="h-10 w-10 flex-shrink-0">
-                        <img class="h-full w-full rounded-full"
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                    <div className="flex items-center">
+                        <div className="h-10 w-10 flex-shrink-0">
+                        <img className="h-full w-full rounded-full"
                          src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${product.filename}`} 
                          alt="" />
                         </div>
-                        <div class="ml-3">
-                        <p class="whitespace-no-wrap">{product.Name}</p>
-                        <span class="text-xs text-gray-500">@{product.Username}</span>
+                        <div className="ml-3">
+                        <p className="whitespace-no-wrap">{product.Name}</p>
+                        <span className="text-xs text-gray-500">@{product.Username}</span>
                         </div>
                     </div>
                     </td>
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                    <p class="whitespace-no-wrap">{product.Email}</p>
-                    <span class="text-xs text-gray-500">{product.Phone}</span>
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                    <p className="whitespace-no-wrap">{product.Email}</p>
+                    <span className="text-xs text-gray-500">{product.Phone}</span>
                     </td>
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                    <p class="whitespace-no-wrap">{product.Wallet} bdt</p>
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                    <p className="whitespace-no-wrap">{product.Wallet} bdt</p>
                     </td>
 
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
                     {product.Blocked ? (
-                      <span class="rounded-full bg-red-200 px-3 py-1 text-xs font-semibold text-red-900">Blocked</span>
+                      <span className="rounded-full bg-red-200 px-3 py-1 text-xs font-semibold text-red-900">Blocked</span>
                     ) : (
-                      <span class="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold text-green-900">Active</span>
+                      <span className="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold text-green-900">Active</span>
                     )}
                   </td>
 
@@ -324,9 +324,9 @@ export default function GetAllSeller({ data }) {
 
                 </tbody>
             </table>
-    <div class="flex flex-col items-center border-t bg-white px-5 py-5 sm:flex-row sm:justify-between">
-            <span class="text-xs text-gray-600 sm:text-sm"> Total <span class="text-indigo-500">{count}</span> active user found and <span class="text-red-500">{blockedCount}</span> blocked shop. </span>
-        <div class="mt-2 inline-flex sm:mt-0">
+    <div className="flex flex-col items-center border-t bg-white px-5 py-5 sm:flex-row sm:justify-between">
+            <span className="text-xs text-gray-600 sm:text-sm"> Total <span className="text-indigo-500">{count}</span> active user found and <span className="text-red-500">{blockedCount}</span> blocked shop. </span>
+        <div className="mt-2 inline-flex sm:mt-0">
 
                 <button
                 className="mr-2 h-12 w-12 rounded-full border text-sm font-semibold text-gray-600 transition duration-150 hover:bg-gray-100"

@@ -94,24 +94,24 @@ export default function GetAllCoupons({ data }) {
             </button>
             <div className="p-6">
 
-            <div class="mt-4 flex items-center justify-between mb-4 space-x-12">
+            <div className="mt-4 flex items-center justify-between mb-4 space-x-12">
             {product.Used ==  product.Useability ? (
-                      <span class="rounded-full bg-red-200 px-3 py-1 text-xs font-semibold text-red-900">Expired</span>
+                      <span className="rounded-full bg-red-200 px-3 py-1 text-xs font-semibold text-red-900">Expired</span>
                     ) : (
-                      <span class="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold  text-green-900">Available</span>
+                      <span className="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold  text-green-900">Available</span>
                     )}
             </div>
 
-            <li class="flex items-center font-bold text-gray-600">
+            <li className="flex items-center font-bold text-gray-600">
 
-                    <a class="text-gray-900">{product.Ammount.toLocaleString()} BDT</a>
+                    <a className="text-gray-900">{product.Ammount.toLocaleString()} BDT</a>
                 </li>
 
-                <td class="border-b border-gray-200   py-5 text-sm">
-                        Code: <code class="whitespace-no-wrap bg-gray-100 rounded-md px-2 py-1">{product.Couponcode}</code>
+                <td className="border-b border-gray-200   py-5 text-sm">
+                        Code: <code className="whitespace-no-wrap bg-gray-100 rounded-md px-2 py-1">{product.Couponcode}</code>
                 </td>
 
-            <p class="mt-4 text-sm text-gray-800 line-clamp-2" title="New York, NY 10004, United States">
+            <p className="mt-4 text-sm text-gray-800 line-clamp-2" title="New York, NY 10004, United States">
                     {product.Discription}
             </p>
 
@@ -119,7 +119,7 @@ export default function GetAllCoupons({ data }) {
                 <div className="mt-4">
                   <p className="font-bold text-gray-600">Admin info:</p>
                   
-                        <ul class="mt-2 text-sm space-y-1">
+                        <ul className="mt-2 text-sm space-y-1">
 
                             <li>
                             <a className="flex items-center text-gray-500 md:hover:text-blue-700">
@@ -129,7 +129,7 @@ export default function GetAllCoupons({ data }) {
                                 />
                                 <div>
                                     <div className="font-small line-clamp-1">
-                                    <p class="whitespace-no-wrap">{product.admin.Firstname} {product.admin.Lastname}</p>
+                                    <p className="whitespace-no-wrap">{product.admin.Firstname} {product.admin.Lastname}</p>
                                     </div>
                                     <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
                                         @{product.admin.Username}
@@ -138,18 +138,18 @@ export default function GetAllCoupons({ data }) {
                             </a>
                         </li>
 
-                        <li class="flex items-center">
-                        <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <li className="flex items-center">
+                        <svg className="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                         </svg>
-                        <a href="mailto:${product.Email}" class="text-gray-900 hover:text-blue-700">{product.admin.Email}</a>
+                        <a href="mailto:${product.Email}" className="text-gray-900 hover:text-blue-700">{product.admin.Email}</a>
                         </li>
 
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <li className="flex items-center">
+                            <svg className="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <a href="tel:${product.Phone}" class="text-gray-900 hover:text-blue-700">{product.admin.Phone}</a>
+                            <a href="tel:${product.Phone}" className="text-gray-900 hover:text-blue-700">{product.admin.Phone}</a>
                         </li>
 
 
@@ -168,11 +168,11 @@ export default function GetAllCoupons({ data }) {
               </div>
 
 
-                <div class="p-6 text-center">
-                <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">What do you want to do with this user?</h3>
+                <div className="p-6 text-center">
+                <svg aria-hidden="true" className="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">What do you want to do with this user?</h3>
 
-                <button onClick={() => handelDelete(product)} type="button" class="mt-4 text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                <button onClick={() => handelDelete(product)} type="button" className="mt-4 text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
                         Delete
                 </button>
                 
@@ -187,7 +187,7 @@ export default function GetAllCoupons({ data }) {
     <>
       <SessionCheck></SessionCheck>
       <div className="flex justify-left mb-4">
-      <div class="relative">
+      <div className="relative">
       <input
             type="text"
             id="searchInput"
@@ -199,8 +199,8 @@ export default function GetAllCoupons({ data }) {
                         focus:border-transparent placeholder-gray-500"
             />
 
-        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
-            <svg class="h-4 w-4 fill-current text-gray-500" viewBox="0 0 16 16">
+        <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <svg className="h-4 w-4 fill-current text-gray-500" viewBox="0 0 16 16">
             <path d="M6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0zM4.8 7.6a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0z"/>
             </svg>
         </div>
@@ -228,30 +228,30 @@ export default function GetAllCoupons({ data }) {
 
 
 
-      <table class="w-full">
+      <table className="w-full">
                 <thead>
-                <tr class="bg-blue-600 text-left text-xs font-semibold uppercase tracking-widest text-white">
-                    <th class="px-5 py-3">ID</th>
-                    <th class="px-5 py-3">Creation time</th>
-                    <th class="px-5 py-3">Created By</th>
-                    <th class="px-5 py-3">Ammount</th>
-                    <th class="px-5 py-3">Used</th>
-                    <th class="px-5 py-3">Code</th>
-                    <th class="px-5 py-3">Status</th>
+                <tr className="bg-blue-600 text-left text-xs font-semibold uppercase tracking-widest text-white">
+                    <th className="px-5 py-3">ID</th>
+                    <th className="px-5 py-3">Creation time</th>
+                    <th className="px-5 py-3">Created By</th>
+                    <th className="px-5 py-3">Ammount</th>
+                    <th className="px-5 py-3">Used</th>
+                    <th className="px-5 py-3">Code</th>
+                    <th className="px-5 py-3">Status</th>
                 </tr>
                 </thead>
-                <tbody class="text-gray-500">
+                <tbody className="text-gray-500">
                 {filteredData.slice((page - 1) * perPage, page * perPage).map((product) => (
                 <tr key={product.Id} 
-                class="hover:bg-gray-200 hover:shadow-xl transition duration-300 ease-in-out"
+                className="hover:bg-gray-200 hover:shadow-xl transition duration-300 ease-in-out"
                 onClick={() => handleToggleMode(product)}
                 >
 
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                    <p class="whitespace-no-wrap">{product.Id}</p>
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                    <p className="whitespace-no-wrap">{product.Id}</p>
                     </td>
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                    <div class="flex items-center">
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                    <div className="flex items-center">
                         <div className="text-sm">
                             {new Date(product.Timestamp).toLocaleDateString("en-US", {
                             day: "numeric",
@@ -262,7 +262,7 @@ export default function GetAllCoupons({ data }) {
                     </div>
                     </td>
 
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
 
                         <a className="flex items-center text-gray-500 md:hover:text-blue-700">
                         <img
@@ -271,7 +271,7 @@ export default function GetAllCoupons({ data }) {
                         />
                         <div>
                             <div className="font-small line-clamp-1">
-                            <p class="whitespace-no-wrap">{product.admin.Firstname} {product.admin.Lastname}</p>
+                            <p className="whitespace-no-wrap">{product.admin.Firstname} {product.admin.Lastname}</p>
                             </div>
                             <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
                                 @{product.admin.Username}
@@ -282,26 +282,26 @@ export default function GetAllCoupons({ data }) {
 
                     </td>
 
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                        <p class="whitespace-no-wrap">{product.Ammount.toLocaleString()} &#2547;</p>
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                        <p className="whitespace-no-wrap">{product.Ammount.toLocaleString()} &#2547;</p>
                     </td>
 
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                        <p class="whitespace-no-wrap">Total: {product.Useability} </p>
-                        <p class="whitespace-no-wrap">Used: {product.Used} </p>
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                        <p className="whitespace-no-wrap">Total: {product.Useability} </p>
+                        <p className="whitespace-no-wrap">Used: {product.Used} </p>
                     </td>
 
-                    <td class="border-b border-gray-200  px-5 py-5 text-sm">
-                        <code class="whitespace-no-wrap bg-gray-100 rounded-md px-2 py-1">{product.Couponcode}</code>
+                    <td className="border-b border-gray-200  px-5 py-5 text-sm">
+                        <code className="whitespace-no-wrap bg-gray-100 rounded-md px-2 py-1">{product.Couponcode}</code>
                     </td>
 
 
 
-                    <td class="border-b border-gray-200 px-5 py-5 text-sm">
+                    <td className="border-b border-gray-200 px-5 py-5 text-sm">
                     {product.Used ==  product.Useability ? (
-                      <span class="rounded-full bg-red-200 px-3 py-1 text-xs font-semibold text-red-900">Expired</span>
+                      <span className="rounded-full bg-red-200 px-3 py-1 text-xs font-semibold text-red-900">Expired</span>
                     ) : (
-                      <span class="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold  text-green-900">Available</span>
+                      <span className="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold  text-green-900">Available</span>
                     )}
                   </td>
 
@@ -311,9 +311,9 @@ export default function GetAllCoupons({ data }) {
 
                 </tbody>
             </table>
-    <div class="flex flex-col items-center border-t bg-white px-5 py-5 sm:flex-row sm:justify-between">
-            <span class="text-xs text-gray-600 sm:text-sm"> Total <span class="text-indigo-500">{count}</span> coupon codes are found and <span class="text-red-500">{blockedCount}</span> are expired.  </span>
-        <div class="mt-2 inline-flex sm:mt-0">
+    <div className="flex flex-col items-center border-t bg-white px-5 py-5 sm:flex-row sm:justify-between">
+            <span className="text-xs text-gray-600 sm:text-sm"> Total <span className="text-indigo-500">{count}</span> coupon codes are found and <span className="text-red-500">{blockedCount}</span> are expired.  </span>
+        <div className="mt-2 inline-flex sm:mt-0">
 
                 <button
                 className="mr-2 h-12 w-12 rounded-full border text-sm font-semibold text-gray-600 transition duration-150 hover:bg-gray-100"

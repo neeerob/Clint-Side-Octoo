@@ -110,23 +110,23 @@ const filteredData =
                 </div>
             </a>
 
-            <div class="mt-4 flex items-center justify-between mb-4 space-x-12">
+            <div className="mt-4 flex items-center justify-between mb-4 space-x-12">
             {product.ModeratorUsername ? (
-                <span class="flex items-center px-2 text-xs font-semibold text-green-500 bg-white border border-green-500 rounded-md">
+                <span className="flex items-center px-2 text-xs font-semibold text-green-500 bg-white border border-green-500 rounded-md">
                 Processed by: @{product.ModeratorUsername}
                 </span>
                 
             ) : (
-                <span class="flex items-center px-2 text-xs font-semibold text-red-400 bg-white border border-red-400 rounded-md">
+                <span className="flex items-center px-2 text-xs font-semibold text-red-400 bg-white border border-red-400 rounded-md">
                 Unprocessed
                 </span>
             )}
             </div>
 
 
-            <div class="flex items-center justify-between mb-4 space-x-12">
+            <div className="flex items-center justify-between mb-4 space-x-12">
             {product.ModeratorUsername ? (
-                <span class="flex items-center px-2 py-1 text-xs font-semibold text-black-500 bg-white border rounded-md">
+                <span className="flex items-center px-2 py-1 text-xs font-semibold text-black-500 bg-white border rounded-md">
                 Action: {product.Action}
                 </span>
                 
@@ -175,27 +175,27 @@ const filteredData =
                 </div>
               </div>
 
-              <div class="mt-4">
-            <p class="font-bold text-gray-600">Seller contact Information:</p>
-            <ul class="mt-2 text-sm space-y-1">
-                <li class="flex items-center">
-                <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="mt-4">
+            <p className="font-bold text-gray-600">Seller contact Information:</p>
+            <ul className="mt-2 text-sm space-y-1">
+                <li className="flex items-center">
+                <svg className="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                 </svg>
-                <a href="mailto:${product.seller.Email}" class="text-gray-900 hover:text-blue-700">{product.seller.Email}</a>
+                <a href="mailto:${product.seller.Email}" className="text-gray-900 hover:text-blue-700">{product.seller.Email}</a>
                 </li>
-                <li class="flex items-center">
-                <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <li className="flex items-center">
+                <svg className="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <a href="tel:${product.seller.Phone}" class="text-gray-900 hover:text-blue-700">{product.seller.Phone}</a>
+                <a href="tel:${product.seller.Phone}" className="text-gray-900 hover:text-blue-700">{product.seller.Phone}</a>
                 </li>
             </ul>
             </div>
 
-                <div class="p-6 text-center">
-                <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">What do you want to do with this report?</h3>
+                <div className="p-6 text-center">
+                <svg aria-hidden="true" className="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">What do you want to do with this report?</h3>
 
                 {product.ModeratorUsername ? (
                     <>
@@ -213,16 +213,16 @@ const filteredData =
                 )}
                 {error && <p className="mt-4 text-red-500">{error}</p>}
                 {product.ModeratorUsername ? (
-                    <button  onClick={() => handleDelete(product)} type="button" class="mt-4 text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2" >
+                    <button  onClick={() => handleDelete(product)} type="button" className="mt-4 text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2" >
                     Delete
                     </button>
                 
                 ) : (
                     <>
-                    <button onClick={() => handleDelete(product)} type="button" class="mt-4 text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2" >
+                    <button onClick={() => handleDelete(product)} type="button" className="mt-4 text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2" >
                     Delete
                     </button>
-                    <button onClick={() => handleProcess(product)} type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+                    <button onClick={() => handleProcess(product)} type="button" className="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
                         Process
                     </button>
 
@@ -292,13 +292,13 @@ const filteredData =
                 </div>
               </a>
 
-              <div class="mt-4 flex items-center justify-between mb-4 space-x-12">
+              <div className="mt-4 flex items-center justify-between mb-4 space-x-12">
             {product.ModeratorUsername ? (
-                <span class="flex items-center px-2 text-xs font-semibold text-green-500 bg-white border border-green-500 rounded-md">
+                <span className="flex items-center px-2 text-xs font-semibold text-green-500 bg-white border border-green-500 rounded-md">
                 Processed
                 </span>
             ) : (
-                <span class="flex items-center px-2 text-xs font-semibold text-red-400 bg-white border border-red-400 rounded-md">
+                <span className="flex items-center px-2 text-xs font-semibold text-red-400 bg-white border border-red-400 rounded-md">
                 Unprocessed
                 </span>
             )}
@@ -318,11 +318,11 @@ const filteredData =
                   Report to:
                 </div>
               </div>
-                <a href={"/shop/"+product.seller.Id} class="flex items-center text-gray-600 md:hover:text-blue-700">
-                <img src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${product.seller.filename}`} alt={product.user.Username} class="w-8 h-8 rounded-full mr-2" />
+                <a href={"/shop/"+product.seller.Id} className="flex items-center text-gray-600 md:hover:text-blue-700">
+                <img src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${product.seller.filename}`} alt={product.user.Username} className="w-8 h-8 rounded-full mr-2" />
                 <div>
-                <div class="font-small line-clamp-1 text-xs">{product.seller.Name}</div>
-                <div class="text-sm text-xs">{product.seller.Email}</div>
+                <div className="font-small line-clamp-1 text-xs">{product.seller.Name}</div>
+                <div className="text-sm text-xs">{product.seller.Email}</div>
                 </div>
             </a>
             </div>

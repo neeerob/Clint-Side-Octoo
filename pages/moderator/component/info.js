@@ -46,42 +46,42 @@ export default function ModeratorInfo(props) {
           </span>
           <span className="tracking-wide">Profile Information</span>
         </div>
-                                <div class="text-gray-700">
-                                    <div class="grid md:grid-cols-2 text-sm">
-                                        <div class="grid grid-cols-2">
-                                            <div class="px-4 py-2 font-semibold">First Name</div>
-                                            <div class="px-4 py-2">{props.firstname}</div>
+                                <div className="text-gray-700">
+                                    <div className="grid md:grid-cols-2 text-sm">
+                                        <div className="grid grid-cols-2">
+                                            <div className="px-4 py-2 font-semibold">First Name</div>
+                                            <div className="px-4 py-2">{props.firstname}</div>
                                         </div>
 
-                                        <div class="grid grid-cols-2">
-                                            <div class="px-4 py-2 font-semibold">Last Name</div>
-                                            <div class="px-4 py-2">{props.lastname}</div>
+                                        <div className="grid grid-cols-2">
+                                            <div className="px-4 py-2 font-semibold">Last Name</div>
+                                            <div className="px-4 py-2">{props.lastname}</div>
                                         </div>
 
 
-                                        <div class="grid grid-cols-2">
-                                            <div class="px-4 py-2 font-semibold">Catagory</div>
-                                            <div class="px-4 py-2">{role}</div>
+                                        <div className="grid grid-cols-2">
+                                            <div className="px-4 py-2 font-semibold">Catagory</div>
+                                            <div className="px-4 py-2">{role}</div>
                                         </div>
 
-                                        <div class="grid grid-cols-2">
-                                            <div class="px-4 py-2 font-semibold">Contact No.</div>
-                                            <div class="px-4 py-2">{props.phone}</div>
+                                        <div className="grid grid-cols-2">
+                                            <div className="px-4 py-2 font-semibold">Contact No.</div>
+                                            <div className="px-4 py-2">{props.phone}</div>
                                         </div>
-                                        <div class="grid grid-cols-2">
-                                            <div class="px-4 py-2 font-semibold">Current Address</div>
-                                            <div class="px-4 py-2">Dhaka, Bangladesh</div>
+                                        <div className="grid grid-cols-2">
+                                            <div className="px-4 py-2 font-semibold">Current Address</div>
+                                            <div className="px-4 py-2">Dhaka, Bangladesh</div>
                                         </div>
 
-                                        <div class="grid grid-cols-2">
-                                            <div class="px-4 py-2 font-semibold">Email.</div>
-                                            <div class="px-4 py-2">
-                                                <a class="text-blue-800" href={`mailto:${props.email}`}>{props.email}</a>
+                                        <div className="grid grid-cols-2">
+                                            <div className="px-4 py-2 font-semibold">Email.</div>
+                                            <div className="px-4 py-2">
+                                                <a className="text-blue-800" href={`mailto:${props.email}`}>{props.email}</a>
                                             </div>
                                         </div>
-                                        <div class="grid grid-cols-2">
-                                            <div class="px-4 py-2 font-semibold">Birthday</div>
-                                            <div class="px-4 py-2">{new Date(props.dob).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
+                                        <div className="grid grid-cols-2">
+                                            <div className="px-4 py-2 font-semibold">Birthday</div>
+                                            <div className="px-4 py-2">{new Date(props.dob).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
                                         </div>
                                     </div>
                                 </div>

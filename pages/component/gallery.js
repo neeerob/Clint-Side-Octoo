@@ -40,7 +40,7 @@ export default function Gallery(){
         <>
             
             <section>
-            <div id="custom-controls-gallery" class="bg-soft-white rounded-lg shadow dark:bg-gray-900 m-4 " data-carousel="slide">
+            <div id="custom-controls-gallery" className="bg-soft-white rounded-lg shadow dark:bg-gray-900 m-4 " data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="/p8.webp" className="absolute block w-full h-full max-w-full max-h-full object-fill -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>

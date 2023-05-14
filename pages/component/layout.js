@@ -87,12 +87,12 @@ export default function MyLayout(props) {
                 alt="Float UI logo"
                 style={{ marginRight: '10px', marginBottom: '10px', marginUp: '10px' }}
               />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 mb-4 text-base font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl dark:text-white">Octo <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">Shop</mark></span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 mb-4 text-base font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl dark:text-white">Octo <mark className="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">Shop</mark></span>
             </a>
           </div>
           <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 `}>
             <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-              <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                 <a
                     href="/"
@@ -133,10 +133,10 @@ export default function MyLayout(props) {
 
                 {username !== null ? (
                       <>        
-                      <img class="h-1 mr-6 rounded-full hover:text-blue-700 hover:cursor-pointer flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${file}`} alt="user photo" style={{width: "32px", height: "32px"}} />
-                      <a href={role === 'user' ? '/user/userPanel' : '/moderator/panel'} class="hover:text-blue-700 hover:cursor-pointer name-span flex items-center justify-between w-full py-2 pl-3 pr-4 pl-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 ">{firstname} {lastname}</a> &nbsp;
+                      <img className="h-1 mr-6 rounded-full hover:text-blue-700 hover:cursor-pointer flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${file}`} alt="user photo" style={{width: "32px", height: "32px"}} />
+                      <a href={role === 'user' ? '/user/userPanel' : '/moderator/panel'} className="hover:text-blue-700 hover:cursor-pointer name-span flex items-center justify-between w-full py-2 pl-3 pr-4 pl-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 ">{firstname} {lastname}</a> &nbsp;
                       <a>
-                          <svg onClick={handleSignOut} class="h-7 w-7 text-blue-500 cursor-pointer"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                          <svg onClick={handleSignOut} className="h-7 w-7 text-blue-500 cursor-pointer"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
                               <path stroke="none" d="M0 0h24v24H0z"/>  
                               <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />  
                               <path d="M7 12h14l-3 -3m0 6l3 -3" />

@@ -72,55 +72,55 @@ export default function Products(){
 
             <br></br><br></br>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full ">
             {filteredProducts.map(product => (
                 <div key={product.Id}>
-                <div class="relative mx-auto w-full ">
-                    <a href={"/product/"+product.Id} class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
-                    <div class="shadow p-4 rounded-lg bg-white">
-                        <div class="flex justify-center relative rounded-lg overflow-hidden h-70 object-fill">
-                        <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 ">
-                                <img class=" rounded max-w-full align-middle border-none"
+                <div className="relative mx-auto w-full ">
+                    <a href={"/product/"+product.Id} className="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+                    <div className="shadow p-4 rounded-lg bg-white">
+                        <div className="flex justify-center relative rounded-lg overflow-hidden h-70 object-fill">
+                        <div className="transition-transform duration-500 transform ease-in-out hover:scale-110 ">
+                                <img className=" rounded max-w-full align-middle border-none"
                                     src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${product.filename}`}
                                     alt={product.ProductName}
                                     style={{width: "250px", height: "250px"}}
                                 />
                         </div>
 
-                            <div class="absolute flex justify-center bottom-0 mb-3">
+                            <div className="absolute flex justify-center bottom-0 mb-3">
                                 
                             </div>
 
-                            <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+                            <span className="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
                                 New
                             </span>
                         </div>
 
-                        <div class="mt-4">
-                        <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+                        <div className="mt-4">
+                        <h2 className="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
                             {product.ProductName}
                         </h2>
                         
                         </div>
-                        <div class="flex item-center justify-between mt-3">
-                        <h1 class="text-1.5xl font-bold text-gray-900">{product.Price.toLocaleString()} &#2547;</h1>
-                            <button class="px-2 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded">Add to Card</button>
+                        <div className="flex item-center justify-between mt-3">
+                        <h1 className="text-1.5xl font-bold text-gray-900">{product.Price.toLocaleString()} &#2547;</h1>
+                            <button className="px-2 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded">Add to Card</button>
                         </div>
-                        <div class="ml-2 mt-3 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+                        <div className="ml-2 mt-3 text-gray-600 uppercase text-xs font-semibold tracking-wider">
                             {product.SelledQuantity} Sold  &bull; {product.Quantity - product.SelledQuantity} Available
                         </div>
-                        <p class="mt-4 text-sm text-gray-800 line-clamp-2" title="New York, NY 10004, United States">
+                        <p className="mt-4 text-sm text-gray-800 line-clamp-2" title="New York, NY 10004, United States">
                             {product.Discription}
                         </p>
 
-                        <div class="grid grid-cols-2 grid-rows-2 gap-1 mt-2">
-                        <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
-                            <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399.959 170.585c-4.686 4.686-4.686 12.284 0 16.971L451.887 239H60.113l51.928-51.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-84.485 84c-4.686 4.686-4.686 12.284 0 16.971l84.485 84c4.686 4.686 12.284 4.686 16.97 0l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273h391.773l-51.928 51.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l84.485-84c4.687-4.686 4.687-12.284 0-16.971l-84.485-84c-4.686-4.686-12.284-4.686-16.97 0l-7.07 7.071z"></path></svg>
-                            <span class="text-gray-600 text-sm">
-                            <span class="text-gray-600 text-sm">{Math.round((new Date() - new Date(product.PublishedDate)) / (1000 * 60 * 60 * 24))} days ago</span>
+                        <div className="grid grid-cols-2 grid-rows-2 gap-1 mt-2">
+                        <p className="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+                            <svg className="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399.959 170.585c-4.686 4.686-4.686 12.284 0 16.971L451.887 239H60.113l51.928-51.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-84.485 84c-4.686 4.686-4.686 12.284 0 16.971l84.485 84c4.686 4.686 12.284 4.686 16.97 0l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273h391.773l-51.928 51.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l84.485-84c4.687-4.686 4.687-12.284 0-16.971l-84.485-84c-4.686-4.686-12.284-4.686-16.97 0l-7.07 7.071z"></path></svg>
+                            <span className="text-gray-600 text-sm">
+                            <span className="text-gray-600 text-sm">{Math.round((new Date() - new Date(product.PublishedDate)) / (1000 * 60 * 60 * 24))} days ago</span>
                             </span>
                         </p>
-                        <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+                        <p className="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
                         <div className="flex items-center mt-0">
                             <div className="mr-2">
                                 <span className="text-yellow-500">
@@ -149,13 +149,13 @@ export default function Products(){
                         </div>
                         <hr></hr>
 
-                        <div class=" mt-2">
+                        <div className=" mt-2">
 
-                        <a  href={"/shop/"+product.seller.Id} class="ease-in-out transition-transform transform md:hover:text-blue-700 hover:-translate-y-1 w-full text-center my-2 flex items-center space-x-4">
-                            <img class="w-10 h-10 rounded-full" src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${product.seller.filename}`}alt=""/>
-                            <div class="font-medium dark:text-white">
+                        <a  href={"/shop/"+product.seller.Id} className="ease-in-out transition-transform transform md:hover:text-blue-700 hover:-translate-y-1 w-full text-center my-2 flex items-center space-x-4">
+                            <img className="w-10 h-10 rounded-full" src={`http://server-octoo-shop-production.up.railway.app/moderator/getimage/${product.seller.filename}`}alt=""/>
+                            <div className="font-medium dark:text-white">
                                 <div data-popover-target="popover-user-profile" className='md:hover:text-blue-700'>{product.seller.Name}</div>
-                                <div class="text-sm text-gray-500 dark:text-gray-400">{product.seller.Email}</div>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">{product.seller.Email}</div>
                             </div>
                         </a>
                         </div>
